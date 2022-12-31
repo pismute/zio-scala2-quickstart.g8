@@ -14,14 +14,14 @@ $endif$
 $if(enable_quill.truthy)$
 val quillVersion          = "4.6.0"
 $endif$
-val zioVersion            = "2.0.2"
-val zioLoggingVersion     = "2.1.2"
-val zioConfigVersion      = "3.0.2"
-val flywayVersion         = "9.4.0"
-val testContainersVersion = "0.40.11"
-val postgresVersion       = "42.5.0"
-val zioJsonVersion        = "0.3.0-RC11"
-val logbackClassicVersion = "1.2.11"
+val zioVersion            = "2.0.5"
+val zioLoggingVersion     = "2.1.7"
+val zioConfigVersion      = "3.0.6"
+val flywayVersion         = "9.10.2"
+val testContainersVersion = "0.40.12"
+val postgresVersion       = "42.5.1"
+val zioJsonVersion        = "0.4.2"
+val logbackClassicVersion = "1.4.5"
 val jansiVersion          = "2.4.0"
 
 val dockerReleaseSettings = Seq(
