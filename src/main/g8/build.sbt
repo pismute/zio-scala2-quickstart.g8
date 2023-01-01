@@ -14,6 +14,7 @@ $endif$
 $if(enable_quill.truthy)$
 val quillVersion          = "4.6.0"
 $endif$
+val catsVersion           = "2.8.0"
 val zioVersion            = "2.0.5"
 val zioLoggingVersion     = "2.1.7"
 val zioConfigVersion      = "3.0.6"
@@ -69,6 +70,7 @@ $if(enable_quill.truthy)$
       "io.getquill" %% "quill-jdbc-zio" % quillVersion,
 $endif$
       // general
+      "org.typelevel"  %% "cats-core"           % catsVersion,
       "dev.zio"        %% "zio-json"            % zioJsonVersion,
       "dev.zio"        %% "zio"                 % zioVersion,
       "dev.zio"        %% "zio-config"          % zioConfigVersion,
