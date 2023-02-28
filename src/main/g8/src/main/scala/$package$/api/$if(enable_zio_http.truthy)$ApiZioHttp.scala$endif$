@@ -17,7 +17,7 @@ object ApiZioHttp {
   implicit class RichRequest(val request: Request) extends AnyVal {
     def bodyAs[T](implicit ev: JsonDecoder[T]): IO[String, T] =
       for {
-        body <- request.bodyAsString.orDie
+        body <- request.body.asString.orDie
         t    <- ZIO.succeed(body.fromJson[T]).absolve
       } yield t
 
